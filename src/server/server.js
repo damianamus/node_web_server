@@ -1,7 +1,11 @@
-const express = require('express')
-const path = require('path')
+// const express = require('express')
+// const path = require('path')
 
-const startServer = (options) => {
+//Lo mismo pero con formato ES6
+import express from'express'
+import path from 'path'
+
+export const startServer = (options) => {
     const {port, public_path = 'public'} = options
     // console.log(port)
     // console.log(public_path)
@@ -23,6 +27,8 @@ const startServer = (options) => {
     })
 }
 
-module.exports = {
-    startServer
-}
+
+//Se elimima esto y se agrega la palabra export delante de la declaracion de la funcion
+// module.exports = {
+//     startServer
+// }
